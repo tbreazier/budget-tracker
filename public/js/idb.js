@@ -24,7 +24,7 @@ request.onsuccess = function(event) {
 };
 
 //save offline transaction to indexDb
-function saveTransaction(record) {
+function saveRecord(record) {
     const transaction = db.transaction(['new_transaction'], 'readwrite');
   
     const transactionObjectStore = transaction.objectStore('new_transaction');
